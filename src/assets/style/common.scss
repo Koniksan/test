@@ -1,0 +1,19 @@
+/*border-box dev*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*********/
+
+html, body {
+  height: 100%;
+}
+
+.wrp {
+  width: 100%;
+  height: 100%;
+}
