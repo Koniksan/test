@@ -1,0 +1,12 @@
+.view {
+    overflow-x: hidden;
+    overflow-y: auto; 
+    position: relative;
+    width: 85vw;
+    max-width: 1074px;
+    height: 85vh;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px #FFFFFF inset, 0 1px 20px rgba(34, 25, 25, 0.4);
+}
