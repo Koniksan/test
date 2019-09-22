@@ -2293,6 +2293,25 @@ exports.push([module.i, "/* http://meyerweb.com/eric/tools/css/reset/\r\n   v2.0
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/lib/loader.js!./src/components/card-item/card-item.scss":
+/*!******************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/components/card-item/card-item.scss ***!
+  \******************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".card-item {\n  position: relative;\n  margin-bottom: 15px; }\n  .card-item:last-child() {\n    margin-bottom: 0; }\n  .card-item .card-item--link {\n    display: block;\n    height: 145px; }\n  .card-item .card-item--promo {\n    overflow: hidden;\n    position: relative;\n    width: 233px;\n    height: 100%;\n    border-radius: 4px; }\n    .card-item .card-item--promo svg {\n      position: absolute;\n      top: 10px;\n      right: 10px;\n      z-index: 3; }\n  .card-item .card-item--img-stub {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background-color: #e8e9ec;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: 80px;\n    background-image: url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSIzNiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSIjQzdDQkNFIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0xNCAwbC0zLjY2IDRINEMxLjggNCAwIDUuOCAwIDh2MjRjMCAyLjIgMS44IDQgNCA0aDMyYzIuMiAwIDQtMS44IDQtNFY4YzAtMi4yLTEuOC00LTQtNGgtNi4zNEwyNiAwSDE0em02IDI5Yy00Ljk2OCAwLTktNC4wMzItOS05czQuMDMyLTkgOS05IDkgNC4wMzIgOSA5LTQuMDMyIDktOSA5em0wLTRjLTIuNzYgMC01LTIuMjQtNS01czIuMjQtNSA1LTUgNSAyLjI0IDUgNS0yLjI0IDUtNSA1eiIvPjxwYXRoIGQ9Ik0tNC00aDQ4djQ4SC00eiIvPjwvZz48L3N2Zz4=\");\n    z-index: 1; }\n  .card-item .card-item--img {\n    position: relative;\n    width: 100%;\n    height: 100%;\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    z-index: 2; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/lib/loader.js!./src/components/card-list/card-list.scss":
 /*!******************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/postcss-loader/src!./node_modules/sass-loader/lib/loader.js!./src/components/card-list/card-list.scss ***!
@@ -2305,7 +2324,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".card-list .card-list--item {\n  position: relative;\n  height: 145px; }\n\n.card-list .card-list--link {\n  display: block; }\n", ""]);
+exports.push([module.i, ".card-list {\n  position: relative; }\n", ""]);
 
 // exports
 
@@ -38513,6 +38532,188 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./src/components/card-item/card-item.js":
+/*!***********************************************!*\
+  !*** ./src/components/card-item/card-item.js ***!
+  \***********************************************/
+/*! exports provided: CardItem */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardItem", function() { return CardItem; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _card_item_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./card-item.scss */ "./src/components/card-item/card-item.scss");
+/* harmony import */ var _card_item_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_card_item_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icons */ "./src/components/card-item/icons.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+
+
+var CardItem =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(CardItem, _React$Component);
+
+  function CardItem() {
+    var _this;
+
+    _classCallCheck(this, CardItem);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(CardItem).call(this));
+    _this.state = {
+      isFavorite: false
+    };
+    return _this;
+  }
+
+  _createClass(CardItem, [{
+    key: "render",
+    value: function render() {
+      var item = this.props.item;
+      var isFavorite = this.state.isFavorite;
+      console.log(item);
+      return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", {
+        className: "card-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+        className: "card-item--link",
+        target: "_blank",
+        href: item.ad_link
+      }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+        className: "card-item--promo"
+      }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+        className: "card-item--img-stub"
+      }), item.images.length != 0 && this.renderItemImg(item.images), isFavorite ? _icons__WEBPACK_IMPORTED_MODULE_3__["activeFavoriteIcon"] : _icons__WEBPACK_IMPORTED_MODULE_3__["favoriteIcon"])));
+    }
+  }, {
+    key: "renderItemImg",
+    value: function renderItemImg(images) {
+      return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+        className: "card-item--img",
+        style: {
+          backgroundImage: "url(https://content.kufar.by/line_thumbs_2x/".concat(images[0].id.substring(0, 2), "/").concat(images[0].id, ".jpg)")
+        }
+      });
+    }
+  }]);
+
+  return CardItem;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+CardItem.propTypes = {
+  item: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired
+};
+
+/***/ }),
+
+/***/ "./src/components/card-item/card-item.scss":
+/*!*************************************************!*\
+  !*** ./src/components/card-item/card-item.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!../../../node_modules/postcss-loader/src!../../../node_modules/sass-loader/lib/loader.js!./card-item.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/lib/loader.js!./src/components/card-item/card-item.scss");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/addStyles.js */ "./node_modules/style-loader/addStyles.js")(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/card-item/icons.js":
+/*!*******************************************!*\
+  !*** ./src/components/card-item/icons.js ***!
+  \*******************************************/
+/*! exports provided: activeFavoriteIcon, favoriteIcon */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "activeFavoriteIcon", function() { return activeFavoriteIcon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "favoriteIcon", function() { return favoriteIcon; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var activeFavoriteIcon = react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  xmlnsXlink: "http://www.w3.org/1999/xlink",
+  width: "28",
+  height: "28"
+}, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("defs", null, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
+  id: "a",
+  d: "M14.486 24.908l-1.762-1.54C6.465 17.92 2.334 14.327 2.334 9.917c0-3.594 2.94-6.417 6.683-6.417 2.115 0 4.144.945 5.47 2.438C15.81 4.445 17.84 3.5 19.954 3.5c3.743 0 6.684 2.823 6.684 6.417 0 4.41-4.132 8.003-10.39 13.463l-1.763 1.528z"
+}), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
+  id: "b",
+  d: "M14.486 24.908l-1.762-1.54C6.465 17.92 2.334 14.327 2.334 9.917c0-3.594 2.94-6.417 6.683-6.417 2.115 0 4.144.945 5.47 2.438C15.81 4.445 17.84 3.5 19.954 3.5c3.743 0 6.684 2.823 6.684 6.417 0 4.41-4.132 8.003-10.39 13.463l-1.763 1.528z"
+})), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("g", {
+  fill: "none",
+  fillRule: "evenodd"
+}, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
+  d: "M0 0h28v28H0z"
+}), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("use", {
+  fill: "#000",
+  fillRule: "nonzero",
+  opacity: ".2",
+  xlinkHref: "#a"
+}), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
+  d: "M0 0h28v28H0z"
+}), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("use", {
+  fill: "#FF5746",
+  fillRule: "nonzero",
+  xlinkHref: "#b"
+})));
+var favoriteIcon = react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  xmlnsXlink: "http://www.w3.org/1999/xlink",
+  width: "28",
+  height: "28",
+  viewBox: "0 0 28 28"
+}, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("defs", null, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
+  id: "a",
+  d: "M13.862 24.896l-1.72-1.503C6.033 18.075 2 14.568 2 10.263 2 6.756 4.87 4 8.524 4c2.064 0 4.045.922 5.338 2.38C15.155 4.922 17.136 4 19.2 4c3.654 0 6.524 2.756 6.524 6.263 0 4.305-4.033 7.812-10.142 13.141l-1.72 1.492z"
+}), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("path", {
+  id: "b",
+  d: "M13.862 24.896l-1.72-1.503C6.033 18.075 2 14.568 2 10.263 2 6.756 4.87 4 8.524 4c2.064 0 4.045.922 5.338 2.38C15.155 4.922 17.136 4 19.2 4c3.654 0 6.524 2.756 6.524 6.263 0 4.305-4.033 7.812-10.142 13.141l-1.72 1.492z"
+})), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("g", {
+  fill: "none",
+  fillRule: "nonzero"
+}, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("use", {
+  fill: "#000",
+  opacity: ".3",
+  xlinkHref: "#a"
+}), react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("use", {
+  stroke: "#FFF",
+  xlinkHref: "#b"
+})));
+
+/***/ }),
+
 /***/ "./src/components/card-list/card-list.js":
 /*!***********************************************!*\
   !*** ./src/components/card-list/card-list.js ***!
@@ -38527,8 +38728,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _card_list_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./card-list.scss */ "./src/components/card-list/card-list.scss");
-/* harmony import */ var _card_list_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_card_list_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _card_item_card_item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../card-item/card-item */ "./src/components/card-item/card-item.js");
+/* harmony import */ var _card_list_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./card-list.scss */ "./src/components/card-list/card-list.scss");
+/* harmony import */ var _card_list_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_card_list_scss__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38539,15 +38741,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -38563,18 +38764,6 @@ function (_React$Component) {
     _classCallCheck(this, CardList);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(CardList).call(this));
-
-    _defineProperty(_assertThisInitialized(_this), "renderListItem", function (item, index) {
-      return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", {
-        className: "card-list--item",
-        key: item.ad_id
-      }, react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
-        className: "card-list--link",
-        target: "_blank",
-        href: item.ad_link
-      }, item.subject));
-    });
-
     _this.state = {};
     return _this;
   }
@@ -38588,10 +38777,14 @@ function (_React$Component) {
     key: "renderList",
     value: function renderList() {
       var items = this.props.items;
-      console.log(items);
       return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", {
         className: "card-list"
-      }, items.map(this.renderListItem));
+      }, items.map(function (x) {
+        return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_card_item_card_item__WEBPACK_IMPORTED_MODULE_2__["CardItem"], {
+          item: x,
+          key: x.ad_id
+        });
+      }));
     }
   }]);
 
@@ -38820,7 +39013,7 @@ root ? react_dom__WEBPACK_IMPORTED_MODULE_2__["render"](react__WEBPACK_IMPORTED_
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\dev\kufar_2\node_modules\webpack-dev-server\client\index.js?http://localhost:9000 */"./node_modules/webpack-dev-server/client/index.js?http://localhost:9000");
+__webpack_require__(/*! D:\dev\test\node_modules\webpack-dev-server\client\index.js?http://localhost:9000 */"./node_modules/webpack-dev-server/client/index.js?http://localhost:9000");
 module.exports = __webpack_require__(/*! ./src/index.js */"./src/index.js");
 
 
