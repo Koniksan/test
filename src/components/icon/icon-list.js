@@ -27,3 +27,26 @@ export const heart = (
         </g>
     </svg>
 );
+
+export const location = (
+    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+        <defs>
+            <path id='d' d="M8 3C5.789 3 4 4.722 4 6.85 4 9.738 8 14 8 14s4-4.262 4-7.15C12 4.722 10.211 3 8 3zm0 5.225c-.789 0-1.429-.616-1.429-1.375S7.211 5.475 8 5.475s1.429.616 1.429 1.375S8.789 8.225 8 8.225z" />
+        </defs>
+        <use fill="#C7CBCE" fillRule="evenodd" xlinkHref="#d" />
+    </svg>
+);
+
+export const time = (
+    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 24 24">
+    <defs>
+        <path id="r" d="M0 0h24v24H0z"/>
+        <path id="t" d="M12 5c-3.85 0-7 3.15-7 7s3.15 7 7 7 7-3.15 7-7-3.15-7-7-7zm-1 7.467V8h1.513v3.703L16 13.696 15.23 15 11 12.467z"/>
+    </defs>
+    <g fill="none" fillRule="evenodd">
+        <path d="M0 0h24v24H0z"/>
+        <use fill="#C7CBCE" fill-rule="nonzero" xlinkHref="#t"/>
+    </g>
+</svg>
+
+)
