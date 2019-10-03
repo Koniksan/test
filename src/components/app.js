@@ -1,27 +1,42 @@
 import * as React from 'react';
 import { CardList } from './card-list/card-list';
 import { View } from './view/view';
+import { connect } from 'react-redux';
+import { loadAds } from '../actions';
 
-export class App extends React.Component {
+class App extends React.Component {
     constructor() {
         super();
         this.state = { items: null };
     }
 
     componentDidMount() {
-        fetch('https://cre-api.kufar.by/ads-search/v1/engine/v1/search/rendered-paginated?size=42&sort=lst.d&cur=BYR&cat=5070&rgn=7&lang=ru')
-            .then(res => res.json()).then(data => {
-                this.setState({ items: data.ads })
-            })
+        this.props.loadAds();
     }
 
     render() {
-        const { items } = this.state;
+        const { ads, isLoading, error } = this.props;
+
         return (
-            <View isLoaded={!!items} >
-                {items && <CardList items={items} />}
+            <View isLoaded={!isLoading} >
+                {ads.length != 0 && <CardList items={ads} />}
+                {error && error}
             </View>
         )
     }
-
 }
+
+const mapStateToProps = ({ isLoading, ads, error }) => ({
+    isLoading,
+    ads,
+    error
+});
+
+const mapDispatchToProps = dispatch => ({
+    loadAds: () => dispatch(loadAds())
+})
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(App);

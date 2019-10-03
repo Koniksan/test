@@ -16,7 +16,6 @@ export class CardItem extends React.Component {
         const { isFavorite } = this.state;
         const iconName = isFavorite ? 'heart-red' : 'heart';
 
-        console.log(item);
         return (
             <li className='card-item'>
                 <a className='card-item--link' target='_blank' href={item.ad_link}>

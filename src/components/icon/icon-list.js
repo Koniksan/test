@@ -45,7 +45,7 @@ export const time = (
     </defs>
     <g fill="none" fillRule="evenodd">
         <path d="M0 0h24v24H0z"/>
-        <use fill="#C7CBCE" fill-rule="nonzero" xlinkHref="#t"/>
+        <use fill="#C7CBCE" fillRule="nonzero" xlinkHref="#t"/>
     </g>
 </svg>
 

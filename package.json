@@ -25,6 +25,8 @@
     "react-html-parser": "^2.0.2",
     "react-redux": "^7.1.1",
     "redux": "^4.0.4",
+    "redux-saga": "^1.1.1",
+    "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.16.1",
     "url-loader": "^0.5.8",

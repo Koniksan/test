@@ -1,0 +1,5 @@
+export const ADS = {
+    LOAD: 'ADS_LOAD',
+    LOAD_SUCCESS: 'ADS_LOAD_SUCCESS',
+    LOAD_FAIL: 'ADS_LOAD_FAIL'
+}
