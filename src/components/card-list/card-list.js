@@ -5,11 +5,6 @@ import { CardItem } from '../card-item/card-item';
 import './card-list.scss'
 
 export class CardList extends React.Component {
-    constructor() {
-        super();
-        this.state = {};
-    }
-
     render() {
         return this.renderList();
     }

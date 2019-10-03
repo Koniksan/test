@@ -45338,15 +45338,9 @@ function (_React$Component) {
   _inherits(App, _React$Component);
 
   function App() {
-    var _this;
-
     _classCallCheck(this, App);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this));
-    _this.state = {
-      items: null
-    };
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));
   }
 
   _createClass(App, [{
@@ -45630,13 +45624,9 @@ function (_React$Component) {
   _inherits(CardList, _React$Component);
 
   function CardList() {
-    var _this;
-
     _classCallCheck(this, CardList);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(CardList).call(this));
-    _this.state = {};
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(CardList).apply(this, arguments));
   }
 
   _createClass(CardList, [{

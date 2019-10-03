@@ -5,11 +5,6 @@ import { connect } from 'react-redux';
 import { loadAds } from '../actions';
 
 class App extends React.Component {
-    constructor() {
-        super();
-        this.state = { items: null };
-    }
-
     componentDidMount() {
         this.props.loadAds();
     }
